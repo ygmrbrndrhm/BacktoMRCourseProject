@@ -22,6 +22,7 @@ using UnityEngine;
 
 public class BouncingBallMgr : MonoBehaviour
 {
+   
     [SerializeField] private Transform trackingspace;
     [SerializeField] private GameObject rightControllerPivot;
     [SerializeField] private OVRInput.RawButton actionBtn;
@@ -35,7 +36,9 @@ public class BouncingBallMgr : MonoBehaviour
         if (!ballGrabbed && OVRInput.GetDown(actionBtn))
         {
             currentBall = Instantiate(ball, rightControllerPivot.transform.position, Quaternion.identity);
+            currentBall.GetComponent<Rigidbody>().AddForce(rightControllerPivot.transform.forward * 0.7f, ForceMode.Force);
             currentBall.transform.parent = rightControllerPivot.transform;
+
             ballGrabbed = true;
         }
 
