@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MRInteractions.unity
+    guid: 8f606be605c840c42a6bc37c81abb228
+  - enabled: 1
     path: Assets/Scenes/FirstMRScene.unity
     guid: de56432c84e0ec746ab1327161acdf73
   m_configObjects:
