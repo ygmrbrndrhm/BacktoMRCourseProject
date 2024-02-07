@@ -9,6 +9,7 @@ public class BrightnessManager : MonoBehaviour
     private void Start()
     {
         AdjustBrightness(0f);
+
     }
     public void AdjustBrightness(float brightnessAmount)
     {
@@ -24,7 +25,7 @@ public class BrightnessManager : MonoBehaviour
         if (passthroughLayer != null)
         {
             float currentBrightness = passthroughLayer.colorMapEditorBrightness;
-           
+            
 
         }
         
