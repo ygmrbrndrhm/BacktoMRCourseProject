@@ -9441,6 +9441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 656833533}
+  hapticDuration: 0.1
 --- !u!4 &1004735267
 Transform:
   m_ObjectHideFlags: 0
@@ -16755,7 +16756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _handGrabState: {fileID: 1254105280}
-  _syntheticHand: {fileID: 0}
+  _syntheticHand: {fileID: 1281915269}
 --- !u!1 &1668722259
 GameObject:
   m_ObjectHideFlags: 0
